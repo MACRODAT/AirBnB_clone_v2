@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Place Module for HBNB project """
+""" Places """
 import os
 from sqlalchemy import Column, Float, ForeignKey, Integer, String, Table
 from sqlalchemy.orm import relationship
@@ -27,8 +27,7 @@ place_amenity = Table(
         primary_key=True
     )
 )
-"""Represents the many to many relationship table
-between Place and Amenity records.
+"""
 """
 
 
