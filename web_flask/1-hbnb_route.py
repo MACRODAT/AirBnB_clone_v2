@@ -10,13 +10,13 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def index():
     """returns default message"""
-    return "Hello HBNB!"
+    return 'Hello HBNB!'
 
 
 @app.route('/hbnb', strict_slashes=False)
 def index():
     """returns default message"""
-    return "hbnb"
+    return 'hbnb'
 
 
 if __name__ == "__main__":
