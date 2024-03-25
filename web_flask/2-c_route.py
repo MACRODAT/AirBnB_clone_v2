@@ -22,7 +22,7 @@ def hbnbb():
 @app.route('/c/<text>', strict_slashes=False)
 def render(text):
     """returns default message"""
-    return 'C' + str(text).replace(' ', '_')
+    return 'C ' + str(text).replace(' ', '_')
 
 
 if __name__ == "__main__":
