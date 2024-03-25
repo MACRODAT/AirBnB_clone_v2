@@ -16,7 +16,7 @@ def index():
 @app.route('/hbnb', strict_slashes=False)
 def index():
     """returns default message"""
-    return 'hbnb'
+    return 'HBNB'
 
 
 if __name__ == "__main__":
