@@ -27,7 +27,7 @@ def render(text):
 
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def render(text="is cool"):
+def render2(text="is cool"):
     """returns default message"""
     return 'Python ' + str(text).replace(' ', '_')
 
@@ -41,7 +41,7 @@ def imanumber(n):
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def rer(n):
     """display a HTML page for an integer"""
-    return render_template('5-number.html', n=n)
+    return render_template('5-number.html', number=n)
 
 
 if __name__ == "__main__":

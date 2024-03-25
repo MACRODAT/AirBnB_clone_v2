@@ -27,7 +27,7 @@ def render(text):
 
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def render(text="is cool"):
+def render2(text="is cool"):
     """returns default message"""
     return 'Python ' + str(text).replace(' ', '_')
 
